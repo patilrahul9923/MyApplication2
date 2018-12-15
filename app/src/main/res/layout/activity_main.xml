@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quagnitia.myapplication.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border_edittext"
+            android:hint="Enter Name"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/eid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edittext"
+            android:hint="UHID"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="0dp"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/eage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ab"
+                android:hint="age"
+                android:padding="10dp"
+                android:layout_marginRight="1dp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/emale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="male"
+                android:padding="10dp"
+                android:background="@drawable/border_edittext"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ebdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_edittext"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="Birthdate"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eaddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Address"
+                android:background="@drawable/border_edittext"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_edittext"
+        android:text="Submit"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textSize="20dp" />
+
+</RelativeLayout>
