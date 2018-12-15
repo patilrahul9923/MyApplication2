@@ -101,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(context, "Birthdate cannot be empty", Toast.LENGTH_SHORT).show();
 
         } else {
+
+
             return true;
         }
 
